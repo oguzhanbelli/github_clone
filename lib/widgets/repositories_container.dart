@@ -43,7 +43,7 @@ class RepositoriesContainer extends StatelessWidget {
                             height: 25,
                             width: 65,
                             child: OutlinedButton.icon(
-                              onPressed: () => print("Room"),
+                              onPressed: () => print("New"),
                               icon: Icon(
                                 Mdi.book,
                                 color: Colors.white,
@@ -74,34 +74,39 @@ class RepositoriesContainer extends StatelessWidget {
                         children: [
                           SizedBox(
                             height: 30,
-                            width: isDesktop
-                                ? MediaQuery.of(context).size.width / 6
-                                : MediaQuery.of(context).size.width / 7,
-                            child: TextField(
-                              autofocus: false,
-                              onTap: () {},
-                              style: TextStyle(
-                                  fontSize: 11.0, color: Palette.githubWhite),
-                              decoration: new InputDecoration(
-                                fillColor: Palette.scaffold.withOpacity(0.5),
-                                enabledBorder: const OutlineInputBorder(
-                                  // width: 0.0 produces a thin "hairline" border
-                                  borderSide: const BorderSide(
-                                      color: Palette.githubGrey, width: 0.0),
-                                ),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(5.0),
-                                ),
-                                filled: true,
-                                hintStyle: GoogleFonts.quicksand(
-                                    color: Palette.githubWhite.withOpacity(0.3),
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.normal),
-                                contentPadding:
-                                    EdgeInsets.only(top: 15, left: 15),
-                                hintText: "Find a repository...",
-                              ),
-                            ),
+                            width: MediaQuery.of(context).size.width / 7,
+                            child: isDesktop
+                                ? TextField(
+                                    autofocus: false,
+                                    onTap: () {},
+                                    style: TextStyle(
+                                        fontSize: 11.0,
+                                        color: Palette.githubWhite),
+                                    decoration: new InputDecoration(
+                                      fillColor:
+                                          Palette.scaffold.withOpacity(0.5),
+                                      enabledBorder: const OutlineInputBorder(
+                                        // width: 0.0 produces a thin "hairline" border
+                                        borderSide: const BorderSide(
+                                            color: Palette.githubGrey,
+                                            width: 0.0),
+                                      ),
+                                      border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5.0),
+                                      ),
+                                      filled: true,
+                                      hintStyle: GoogleFonts.quicksand(
+                                          color: Palette.githubWhite
+                                              .withOpacity(0.3),
+                                          fontSize: 11,
+                                          fontWeight: FontWeight.normal),
+                                      contentPadding:
+                                          EdgeInsets.only(top: 15, left: 15),
+                                      hintText: "Find a repository...",
+                                    ),
+                                  )
+                                : Center(),
                           ),
                         ],
                       ),
@@ -140,7 +145,7 @@ class RepositoriesContainer extends StatelessWidget {
                                           Expanded(
                                             child: Text(
                                               "${repo.repoName}",
-                                              maxLines:2,
+                                              maxLines: 2,
                                               softWrap: true,
                                               overflow: TextOverflow.ellipsis,
                                               style: GoogleFonts.quicksand(
@@ -164,7 +169,6 @@ class RepositoriesContainer extends StatelessWidget {
                         height: 5,
                       ),
                       Row(
-
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(

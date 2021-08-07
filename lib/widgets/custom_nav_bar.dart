@@ -294,7 +294,7 @@ Widget popupButton(BuildContext context) {
         PopupMenuItem(
             child: ListTile(
           title: Text(
-            'New repository',
+            """Signed in as \noguzhanbelli""",
             style: GoogleFonts.quicksand(
               color: Palette.githubWhite,
               fontSize: 10,
@@ -304,7 +304,7 @@ Widget popupButton(BuildContext context) {
         PopupMenuItem(
             child: ListTile(
           title: Text(
-            'Import repository',
+            'Your profile',
             style: GoogleFonts.quicksand(
               color: Palette.githubWhite,
               fontSize: 10,
@@ -314,7 +314,7 @@ Widget popupButton(BuildContext context) {
         PopupMenuItem(
             child: ListTile(
           title: Text(
-            'New gist',
+            'Your repositories',
             style: GoogleFonts.quicksand(
               color: Palette.githubWhite,
               fontSize: 10,
@@ -324,7 +324,7 @@ Widget popupButton(BuildContext context) {
         PopupMenuItem(
             child: ListTile(
           title: Text(
-            'New organization',
+            'Your codespaces',
             style: GoogleFonts.quicksand(
               color: Palette.githubWhite,
               fontSize: 10,
@@ -334,7 +334,37 @@ Widget popupButton(BuildContext context) {
         PopupMenuItem(
             child: ListTile(
           title: Text(
-            'New project',
+            'Your projects',
+            style: GoogleFonts.quicksand(
+              color: Palette.githubWhite,
+              fontSize: 10,
+            ),
+          ),
+        )),
+        PopupMenuItem(
+            child: ListTile(
+          title: Text(
+            'Your stars',
+            style: GoogleFonts.quicksand(
+              color: Palette.githubWhite,
+              fontSize: 10,
+            ),
+          ),
+        )),
+        PopupMenuItem(
+            child: ListTile(
+          title: Text(
+            'Settings',
+            style: GoogleFonts.quicksand(
+              color: Palette.githubWhite,
+              fontSize: 10,
+            ),
+          ),
+        )),
+        PopupMenuItem(
+            child: ListTile(
+          title: Text(
+            'Sign out',
             style: GoogleFonts.quicksand(
               color: Palette.githubWhite,
               fontSize: 10,

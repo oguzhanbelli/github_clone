@@ -14,18 +14,27 @@ class AllActivityContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool isMobile = Responsive.isMobile(context);
+    final bool isDesktop = Responsive.isDesktop(context);
     return Container(
       color: Palette.scaffold,
       child: Container(
         height: MediaQuery.of(context).size.height,
-        margin: EdgeInsets.fromLTRB(30.0, 30.0, 20.0, 0.0),
+        margin: EdgeInsets.fromLTRB(30.0, 30.0, 20.0, 5.0),
         color: Palette.scaffold,
         child: SingleChildScrollView(
           child: Column(
-
             children: [
+              !isDesktop
+                  ? Container(
+                      width: MediaQuery.of(context).size.width / 2,
+                      height: MediaQuery.of(context).size.height / 1.5,
+                      child: RepositoriesContainer(currentUser: currentUser),
+                    )
+                  : Center(),
+              SizedBox(
+                height: 5,
+              ),
               Row(
-
                 children: [
                   Text(
                     "All Activity",
@@ -195,8 +204,7 @@ class AllActivityContainer extends StatelessWidget {
                                     ),
                                     OutlinedButton.icon(
                                       style: OutlinedButton.styleFrom(
-                                          backgroundColor:
-                                          Palette.gitHubHeadBg,
+                                          backgroundColor: Palette.gitHubHeadBg,
                                           primary: Palette.githubWhite,
                                           alignment: Alignment.center),
                                       onPressed: () {},
