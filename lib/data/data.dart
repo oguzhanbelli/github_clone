@@ -11,23 +11,50 @@ final List<ActivityModel> activityList = [
     userName: "oguzhanbelli",
     userPhoto:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-    followingName: "Emirhan Belli",
-    followingUserPhoto:
-        "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80",
-    followingUserName: "emirhanbelli",
-    followingRepo: "7",
-    followingFollowers: "8",
+    starredRepoName: "spf13/cast",
+    starredRepoDesc: "safe and easy casting from one type to another in Go",
+    activityDate: "5 hours ago",
+    starredRepoLang: "Go",
+    starredRepoLangColor: Color(0xff00B4AB),
+    starredRepoStars: "1.6k",
+    starredRepoDate: "Updated Aug 7",
   ),
   ActivityModel(
-    userName: "mahmutandiran",
+    userName: "oguzhanbelli",
     userPhoto:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-    followingName: "Caner Kıran",
-    followingUserPhoto:
-        "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80",
-    followingUserName: "canerkiran",
-    followingRepo: "10",
-    followingFollowers: "20",
+    starredRepoName: "deepopinion/domain-adapted-atsc",
+    starredRepoDesc:
+        """code for our 2019 paper: "Adapt or Get Left Behind: Domain Adaptation through BERT Language Model Finetuning for Aspect-Target Sentiment Classific…""",
+    activityDate: "yesterday",
+    starredRepoLang: "Python",
+    starredRepoLangColor: Color(0xff00B4AB),
+    starredRepoStars: "138",
+    starredRepoDate: "Updated Aug 6",
+  ),
+  ActivityModel(
+    userName: "oguzhanbelli",
+    userPhoto:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    starredRepoName: "spf13/cast",
+    starredRepoDesc: "safe and easy casting from one type to another in Go",
+    activityDate: "5 hours ago",
+    starredRepoLang: "HTML",
+    starredRepoLangColor: Color(0xffe34c26),
+    starredRepoStars: "138",
+    starredRepoDate: "Updated Aug 7",
+  ),
+  ActivityModel(
+    userName: "oguzhanbelli",
+    userPhoto:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    starredRepoName: "spf13/cast",
+    starredRepoDesc: "safe and easy casting from one type to another in Go",
+    activityDate: "5 hours ago",
+    starredRepoLang: "Java",
+    starredRepoLangColor: Color(0xffb07219),
+    starredRepoStars: "148",
+    starredRepoDate: "Updated Aug 7",
   ),
 ];
 

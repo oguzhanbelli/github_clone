@@ -22,10 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
         Row(
           children: [
             Expanded(
-                flex: isDesktop ? 3 : 4,
-                child: RepositoriesContainer(
+                flex: isDesktop ? 3 : 0,
+                child: isDesktop ?  RepositoriesContainer(
                   currentUser: currentUser,
-                )),
+                ):Center()),
             Expanded(
               flex: isDesktop ? 9 : 11,
               child: AllActivityContainer(
